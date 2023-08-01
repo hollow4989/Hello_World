@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Animation</title>
+    <style>
+        /* Add some basic styles to center the animation on the page */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Prevent characters from moving outside the screen */
+        }
+        .char {
+            display: inline-block;
+            font-size: 48px;
+            position: absolute;
+            cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+        }
+    </style>
+</head>
+<body>
+    <!-- The text to be animated -->
+    <div id="hello-world">
+        <span class="char">H</span>
+        <span class="char">e</span>
+        <span class="char">l</span>
+        <span class="char">l</span>
+        <span class="char">o</span>
+        <span class="char"> </span>
+        <span class="char">W</span>
+        <span class="char">o</span>
+        <span class="char">r</span>
+        <span class="char">l</span>
+        <span class="char">d</span>
+    </div>
+
+    <!-- Include the Anime.js library -->
+    <script src="./js/anime.min.js"></script>
+
+    <!-- Add the animation script -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
